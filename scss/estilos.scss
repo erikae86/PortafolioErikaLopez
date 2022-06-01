@@ -1,0 +1,174 @@
+@import "fuentes";
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	background-color: #272727;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+}
+
+
+h1{
+	font-family: 'Dancing Script', cursive;
+	font-style: bold;
+	font-size: 4.4rem;
+	letter-spacing: 1,5px;
+	color: #528B85;
+	text-align: center;
+}
+
+h2{
+	font-family: 'Dancing Script', cursive;
+	font-style: normal;
+	font-size: 2.2rem;
+	letter-spacing: 1,5px;
+	color: #528B85;
+}
+
+h3{
+	background-color: #272727;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.25rem;
+	font-weight: normal;
+
+}
+
+h4{
+	background-color: #272727;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	font-weight: normal;
+
+}
+
+ul{
+	list-style: none;
+
+}
+
+
+p{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	font-weight: normal;
+	color: white;
+}
+
+
+/* SECCION MENÙ NAVEGACION*/
+
+
+.menu_o a{
+	color: #272727;
+	text-decoration: none;
+	list-style: none;
+	&:hover{
+		background: #F67D83;
+		color: #272727;
+		padding: 5px 20px;
+		border-radius: 18px;
+		transition: ease-in .2s;
+		}
+}
+
+
+.menu_o2 {
+    position: absolute;
+    left: 60%;
+    transform: translatex(-10%);
+    a{
+    	&:hover{
+    		background: #F67D83;
+			color: #272727;
+			padding: 5px 20px;
+			border-radius: 18px;
+			transition: ease-in .2s;
+    	}
+    }
+}
+
+
+
+/* SECCION PORTADA - HOME*/
+
+
+
+.hero__text li::before {
+	content:'' ;
+	text-align: justify-all;
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-image: url("../assets/img/Frame121.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-right: .5em;
+	margin-top: .7em;
+}
+
+
+/* SECCION SOBRE MI */
+
+
+
+.sobre__name{
+	justify-content: left;
+	padding: 30px;
+	justify-content: space-between;
+	p{
+	width: 90%;
+	margin-top: 30px;
+	
+	}
+}
+
+
+.eri {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	letter-spacing: 0,2px;
+	color: #F45F67;
+}
+.lopez {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	color: transparent ;
+	 -webkit-text-stroke: .7px;
+	 -webkit-text-stroke-color: #F45F67;
+	letter-spacing: 1,5px;
+}
+
+/* HABILIDADES*/
+
+.habi h3{
+	color: #F5CE46;
+}
+	
+
+/* SECCION SERVICIO */
+
+.container_grid_serv h3{
+	color: #F5CE46;
+}
+
+/* SECCION SERVICIO: Metodo de trabajo */
+ #container_met img{
+ 	width: 3rem;
+ }
+
+/*FOOTER*/
+
+footer{
+	opacity: 0.9;
+}
