@@ -1,0 +1,14 @@
+@mixin diseño{
+	a{
+	color: #272727;
+	text-decoration: none;
+	list-style: none;
+		&:hover{
+    		background: #F67D83;
+			color: #272727;
+			padding: 5px 20px;
+			border-radius: 18px;
+			transition: ease-in .2s;
+    	}
+}
+}

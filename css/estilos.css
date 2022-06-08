@@ -1,6 +1,17 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1300;1400;1500;1600;1700;1800;1900 & mostrar=intercambiar");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+h3, .eri, .lopez {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+h4, p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +22,26 @@ body {
   background-color: #272727;
   font-family: 'Poppins', sans-serif;
   color: white;
+}
+
+headings {
+  font-size: 4.4rem;
+}
+
+headings {
+  font-size: 2.6rem;
+}
+
+headings {
+  font-size: 1.25rem;
+}
+
+headings {
+  font-size: 1rem;
+}
+
+headings {
+  font-size: 1rem;
 }
 
 h1 {
@@ -25,23 +56,17 @@ h1 {
 h2 {
   font-family: 'Dancing Script', cursive;
   font-style: normal;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   letter-spacing: 1,5px;
   color: #528B85;
 }
 
 h3 {
-  background-color: #272727;
-  font-family: 'Poppins', sans-serif;
   font-size: 1.25rem;
-  font-weight: normal;
 }
 
 h4 {
-  background-color: #272727;
-  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  font-weight: normal;
 }
 
 ul {
@@ -49,10 +74,19 @@ ul {
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  font-weight: normal;
   color: white;
+}
+
+h3, .eri, .lopez {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+h4, p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
 }
 
 /* SECCION MENÙ NAVEGACION*/
@@ -63,20 +97,6 @@ p {
 }
 
 .menu_o a:hover {
-  background: #F67D83;
-  color: #272727;
-  padding: 5px 20px;
-  border-radius: 18px;
-  transition: ease-in .2s;
-}
-
-.menu_o2 {
-  position: absolute;
-  left: 60%;
-  transform: translatex(-10%);
-}
-
-.menu_o2 a:hover {
   background: #F67D83;
   color: #272727;
   padding: 5px 20px;
@@ -112,18 +132,12 @@ p {
 }
 
 .eri {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 35px;
   letter-spacing: 0,2px;
   color: #F45F67;
 }
 
 .lopez {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 35px;
   color: transparent;
   -webkit-text-stroke: .7px;

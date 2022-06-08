@@ -1,96 +1,17 @@
 @import "fuentes";
 
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
+@import "main";
 
+@import "mixin";
 
-body {
-	background-color: #272727;
-	font-family: 'Poppins', sans-serif;
-	color: white;
-}
-
-
-h1{
-	font-family: 'Dancing Script', cursive;
-	font-style: bold;
-	font-size: 4.4rem;
-	letter-spacing: 1,5px;
-	color: #528B85;
-	text-align: center;
-}
-
-h2{
-	font-family: 'Dancing Script', cursive;
-	font-style: normal;
-	font-size: 2.2rem;
-	letter-spacing: 1,5px;
-	color: #528B85;
-}
-
-h3{
-	background-color: #272727;
-	font-family: 'Poppins', sans-serif;
-	font-size: 1.25rem;
-	font-weight: normal;
-
-}
-
-h4{
-	background-color: #272727;
-	font-family: 'Poppins', sans-serif;
-	font-size: 1rem;
-	font-weight: normal;
-
-}
-
-ul{
-	list-style: none;
-
-}
-
-
-p{
-	font-family: 'Poppins', sans-serif;
-	font-size: 1rem;
-	font-weight: normal;
-	color: white;
-}
+@import "extend";
 
 
 /* SECCION MENÙ NAVEGACION*/
 
 
-.menu_o a{
-	color: #272727;
-	text-decoration: none;
-	list-style: none;
-	&:hover{
-		background: #F67D83;
-		color: #272727;
-		padding: 5px 20px;
-		border-radius: 18px;
-		transition: ease-in .2s;
-		}
-}
-
-
-.menu_o2 {
-    position: absolute;
-    left: 60%;
-    transform: translatex(-10%);
-    a{
-    	&:hover{
-    		background: #F67D83;
-			color: #272727;
-			padding: 5px 20px;
-			border-radius: 18px;
-			transition: ease-in .2s;
-    	}
-    }
+.menu_o {
+	@include diseño;
 }
 
 
@@ -123,27 +44,23 @@ p{
 	padding: 30px;
 	justify-content: space-between;
 	p{
-	width: 90%;
-	margin-top: 30px;
+		width: 90%;
+		margin-top: 30px;
 	
 	}
 }
 
 
 .eri {
-	font-family: 'Poppins', sans-serif;
-	font-style: normal;
-	font-weight: bold;
+	@extend %letra;
 	font-size: 35px;
 	letter-spacing: 0,2px;
 	color: #F45F67;
 }
 .lopez {
-	font-family: 'Poppins', sans-serif;
-	font-style: normal;
-	font-weight: bold;
+	@extend %letra;
 	font-size: 35px;
-	color: transparent ;
+	color: transparent;
 	 -webkit-text-stroke: .7px;
 	 -webkit-text-stroke-color: #F45F67;
 	letter-spacing: 1,5px;

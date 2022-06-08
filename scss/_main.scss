@@ -1,0 +1,82 @@
+@import "extend";
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	background-color: #272727;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+}
+
+
+$headings:(
+	h1: 4.4rem,
+	h2: 2.6rem,
+	h3: 1.25rem,
+	h4: 1rem,
+	p: 1rem,
+);
+
+@each $headings, $size in $headings {
+	#{headings} {
+		font-size: $size;
+	}
+}
+
+$palette: (
+	'Primario': #F45F67, 
+	'Secundario': #528B85,
+	'Terciario': #F5CE46,
+	'Opcional': #272727, 
+);
+
+
+
+h1{
+	font-family: 'Dancing Script', cursive;
+	font-style: bold;
+	font-size: map-get($map: $headings, $key:'h1');
+	letter-spacing: 1,5px;
+	color: map-get($map: $palette, $key: 'Secundario');
+    text-align: center;
+   
+}
+
+h2{
+	font-family: 'Dancing Script', cursive;
+	font-style: normal;
+	font-size: map-get($map: $headings, $key:'h2');
+	letter-spacing: 1,5px;
+	color: map-get($map: $palette, $key: 'Secundario');
+}
+
+h3{
+	@extend %letra;
+	font-size: map-get($map: $headings, $key:'h3');
+	background-color: map-get($map: $palette, $key: 'Optional');
+	
+}
+
+h4{
+	@extend %letra2;
+	font-size: map-get($map: $headings, $key:'h4');
+	background-color: map-get($map: $palette, $key: 'Optional');
+
+}
+
+ul{
+	list-style: none;
+
+}
+
+
+p{
+	@extend %letra2;
+	font-size: map-get($map: $headings, $key:'p');
+	color: white;
+}
