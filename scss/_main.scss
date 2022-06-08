@@ -56,7 +56,7 @@ h2{
 }
 
 h3{
-	@extend %letra;
+	@extend %letra2;
 	font-size: map-get($map: $headings, $key:'h3');
 	background-color: map-get($map: $palette, $key: 'Optional');
 	
