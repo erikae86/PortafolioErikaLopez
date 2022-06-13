@@ -78,6 +78,14 @@ p {
   color: white;
 }
 
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .eri, .lopez {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -90,6 +98,11 @@ h3, h4, p {
 }
 
 /* SECCION MENÙ NAVEGACION*/
+.menu1 {
+  position: fixed;
+  z-index: 100;
+}
+
 .menu_o a {
   color: #272727;
   text-decoration: none;

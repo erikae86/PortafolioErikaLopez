@@ -9,6 +9,11 @@
 
 /* SECCION MENÙ NAVEGACION*/
 
+.menu1{
+	position: fixed;
+	z-index: 100;
+}
+
 
 .menu_o {
 	@include diseño;

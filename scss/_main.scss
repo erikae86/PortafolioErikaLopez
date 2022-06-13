@@ -80,3 +80,11 @@ p{
 	font-size: map-get($map: $headings, $key:'p');
 	color: white;
 }
+
+section[id] {
+	scroll-margin-top:100px
+}
+
+html{
+	scroll-behavior: smooth;
+}

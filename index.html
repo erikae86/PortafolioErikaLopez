@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 
-	<title>Home</title>
+	<title>Portafolio</title>
 </head>
 <body>
 	
@@ -15,7 +15,7 @@
 
 		
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light col-md-12">
+<nav class="menu1 navbar navbar-expand-lg navbar-light bg-light col-md-12">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
      				 <ul class="menu_o navbar-nav mx-auto">
 						<li class="nav-item mx-4">
-						<a class="nav-link" aria-current="page" href="#header">Home</a></li>
+						<a class="nav-link" aria-current="page" href="#home">Home</a></li>
 						<li class="nav-item mx-4">
 						<a class="nav-link" href="#sobre_mi">Sobre mi</a></li>
 						<li class="nav-item mx-4">
@@ -44,11 +44,11 @@
 
 
 	
-<div class="container py-5">
+<div class="container py-5 pt-8" id="home">
 		<div class="row">
 			<div class="col">
-					<div class="row">
-						<div class="col-sm-12 col-md-7">
+					<div class="row mt-9">
+						<div class="col-sm-12 col-md-7 pt-5">
 							
 			 
 						<img src="./assets/img/imgcompleta.png" alt="imageneri" class="img-fluid rounded mx-auto d-block w-75">
@@ -74,9 +74,10 @@
 
 <!--SOBRE MI-->
 
-
-<div class="container">
-		<div class="text-center my-4">
+<section id="sobre_mi">
+	
+	<div class="container" >
+		<div class="text-center">
 			<h2>Sobre mí</h2>
 		</div>
 		<div class="row">
@@ -94,7 +95,9 @@
 				 </div>										
 		</div>
 			
-</div>
+	</div>
+
+</section>
 
 
 <!--HABILIDADES-->
@@ -245,17 +248,14 @@
 				<h4>Corporación Ugal, S.A</h4>
 		</div>
 	</div>
-
-
-
 </div>
    
 
 
-
-
 <!--PORTAFOLIO-->
-		<div class="titulo text-center my-5">
+		
+		<section id="portafolio">
+			<div class="titulo text-center ">
 				<h2>Portafolio</h2>
 		</div>
 
@@ -292,14 +292,16 @@
 					  </button>
 				</div>
 	
+		</section>
 		
 
 <!--SERVICIOS-->
 
 
-			<div class="text-center my-5 mt-9">
-				<h2>Metodología de trabajo</h2>
-			</div>
+<section id="servicios">
+		<div class="text-center my-5 mt-9">
+			<h2>Metodología de trabajo</h2>
+		</div>
 
 		<div class="container">
 			<div class="row">
@@ -366,6 +368,7 @@
 		</div>
 
 			
+			</section>
 
 		
 
@@ -407,13 +410,13 @@
 
 <!--CONTACTO-->
 
-
+<section id="contacto">
 	<div class="container">
 		<div class="row justify-content-center mt-5"> 
 			<div class="col-md-7">
 				<h2>Formulario de contacto</h2>
 				<hr class="bg-warning">
-				<p class="pb-0 mb-0">Te invito a contactarme, te respondere a la brevedad</p>
+				<p class="pb-0 mb-0">Te invito a contactarme, te responderé a la brevedad</p>
 				<p class="text-danger small pt-0 mt-0">*Todos los datos son obligatorios</p>
 				<form>
 					<div class="row form-group m-3">
@@ -442,13 +445,35 @@
 					</div>
 
 					<div class="col text-center py-3">
-   						<button class="btn btn-light">Enviar</button>
+   						<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+						  Enviar
+						</button>
 					</div> 
+
+
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h4 class="modal-title text-secondary" id="staticBackdropLabel">Su mensaje ha sido enviado con éxito!!</h4>
+					      </div>
+					      <div class="modal-body text-secondary">
+					        En breve responderemos su consulta!!
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 					
 				</form>
 			</div>
 		</div>
 	</div>
+
+</section>
 
 
 
@@ -466,11 +491,11 @@
 				<!--menú para volver-->
 
 				<ul class="col-lg-3 col-md-3 list-unstyled">
-					<li class="font-weight-bold">Menú</li>			
-					<li><a href="#" class="text-reset text-decoration-none">Sobre mi</a></li>
-					<li><a href="#" class="text-reset text-decoration-none">Mi portafolio</a></li>
-					<li><a href="#" class="text-reset text-decoration-none">Servicios</a></li>
-					<li><a href="#" class="text-reset text-decoration-none">Contacto</a></li>
+					<li><a href="#home" class="text-reset text-decoration-none">Home</a></li>			
+					<li><a href="#sobre_mi" class="text-reset text-decoration-none">Sobre mi</a></li>
+					<li><a href="#portafolio" class="text-reset text-decoration-none">Mi portafolio</a></li>
+					<li><a href="#servicios" class="text-reset text-decoration-none">Servicios</a></li>
+					<li><a href="#contacto" class="text-reset text-decoration-none">Contacto</a></li>
 				</ul>
 
 				<!--Contactame-->
@@ -487,23 +512,23 @@
 					<li class="font-weight-bold">Redes sociales</li>			
 					<li class="d-flex justify-content-around">
 						<!--Behance-->
-						<a href="#" class="text-reset text-decoration-none">
+						<a href="https://www.behance.net/erikae86" target="_blank" class="text-reset text-decoration-none">
 							<i class="bi bi-behance"></i>
 						</a>
 						<!--Linkedin-->
-						<a href="#" class="text-reset text-decoration-none">
+						<a href="https://www.linkedin.com/in/erikae86/" target="_blank" class="text-reset text-decoration-none">
 							<i class="bi bi-linkedin"></i>
 						</a>
 						<!--Instagram-->
-						<a href="#" class="text-reset text-decoration-none">
+						<a href="https://www.instagram.com/erikae86/" target="_blank" class="text-reset text-decoration-none">
 							<i class="bi bi-instagram"></i>
 						</a>
 						<!--Facebook-->
-						<a href="#" class="text-reset text-decoration-none">
+						<a href="https://www.facebook.com/profile.php?id=100001856898804" target="_blank" class="text-reset text-decoration-none">
 							<i class="bi bi-facebook"></i>
 						</a>
 						<!--Whatsapp-->
-						<a href="#" class="text-reset text-decoration-none">
+						<a href="https://wa.link/xsami9" target="_blank" class="text-reset text-decoration-none">
 							<i class="bi bi-whatsapp"></i>
 						</a>
 					</li>
